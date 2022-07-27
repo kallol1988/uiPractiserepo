@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
     -webkit-box-sizing: border-box;
@@ -20,13 +20,10 @@
 
 body,
 html {
-    font-family: 'Poppins';
+    font-family: 'Inter', sans-serif;
     font-size: 14px;
-    line-height: 1.78em;
-    color: #000;
-    font-weight: normal;
-    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: transparent;
+    color: #7A8699;
+    font-weight: 400;
 }
 
 /* Lists==================== */
@@ -143,21 +140,7 @@ h6 {
     margin: 0;
 }
 
-h1 {
-    font-size: 4.21em;
-    line-height: 75px;
-}
-h3 {
-    font-size: 3.48em;
-    line-height: 58px;
-}
 
-/* Other elements==================== */
-img {
-    display: inline-flex;
-    max-height: 100%;
-    max-width: 100%;
-}
 
 blockquote,
 q {
@@ -175,4 +158,100 @@ q:after {
 br,
 .clear {
     clear: both;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.dashboardBody {
+  height: 100%;
+  overflow: hidden;
+  background :#F7F8FA;
+}
+
+.leftSidebar {
+  height: 100vh;
+  overflow-y: auto;
+  padding-bottom: 25px;
+  border-right: 1px solid #d3dae3;
+}
+
+.sidebarHeader {
+  padding: 30px 32px;
+  border-bottom: 1px solid #d3dae3;
+  display: flex;
+  align-items: center;
+}
+
+.sidebarHeader h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1F2633;
+}
+
+.dashboardCollapse {
+  margin-left: 112px;
+  cursor: pointer;
+}
+
+.sidebarContentWraper {
+  padding: 32px;
+}
+.userInfo {
+  align-items: center;
+  border-bottom: 1px solid #d3dae3;
+  padding-bottom: 32px;
+}
+.userinfoImg {
+  margin-right: 22px;
+  position: relative;
+}
+.userInfoControls {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.userinfoDetails h5 {
+  color: #1F2633;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.userinfoDetails p {
+  font-size: 11px;
+  font-weight: 700;
+  margin-top: 3px;
+}
+
+.activated .activetedImg {
+  display: block;
+}
+.activetedImg {
+  position: absolute;
+  left: -4px;
+  top: -4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contentRight {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: calc(100% - 302px);
+  max-width: calc(100% - 302px);
+  height: 100%;
+  position: relative;
 }
