@@ -546,6 +546,8 @@ img.pogressInfo {
 .rightSideWraper {
   position: relative;
   padding: 36px;
+  height: calc(100vh - 87px);
+    overflow-y: auto;
 }
 .subHeadingsWraper {
   width: 100%;
@@ -840,6 +842,7 @@ align-items: center;
 
 .individualBox {
   flex: 1 1 25%; 
+  height: 90vh;
 }
 .boxHeadingWraper {
   display: flex;
@@ -905,6 +908,9 @@ min-height: 92px;
 .activeInfos {
   color: #17A5E6;
 }
+.activeInfos.normal {
+  color: #98A2B3;
+}
 .boxInfoHeading h5 {
 color: #1F2633;
 font-size:12px;
@@ -947,7 +953,7 @@ font-weight: 600;
 }
 .boxUserWraper {
   position: relative;
-  width:50%;
+  width:52%;
   display: flex;
   align-items: center;
 }
@@ -959,4 +965,61 @@ font-weight: 600;
 }
 .boxUserWraper .moreUsers {
   left: 50px;
+}
+.boxUserWraper {
+  margin-right: 30px;
+}
+.attachmentMessageWraper {
+  margin-left: auto;
+}
+.attachmentMessageWraper {
+  display: flex;
+  align-items: center;
+}
+.attachment_file {
+  margin-right: 10px;
+}
+.attachment_file img, .attachment_message img {
+  margin-right: 12px;
+}
+.attachment_file, .attachment_message {
+  color: #98A2B3;
+  font-size: 10px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+}
+
+.attachment_file.activated {
+  color: #9333EA;
+}
+.attachment_message.activated {
+  color: #D97706;
+}
+.boxUserWraper.oneUser {
+  width: 33%;
+}
+
+.boxUserWraper.twoUser {
+  width: 42%;
+}
+
+.noUsers .tagsWraper {
+  margin-bottom: 0;
+}
+.indBoxContent.addNew {
+  min-height: 32px;
+  text-align: center;
+  padding: 8px;
+}
+
+.indBoxContent.addNew {
+  min-height: 32px;
+    text-align: center;
+    padding: 9px;
+}
+
+.indBoxContent.addNew button {
+  border: none;
+  background: none;
 }
