@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 
 * {
     -webkit-box-sizing: border-box;
@@ -340,12 +340,28 @@ font-weight:700;
   border: 1px solid #EBEEF2;
   box-shadow: 0px 1px 3px rgb(96 108 128 / 5%);
   border-radius: 8px;
-  padding: 11px 15px;
+  /* padding: 11px 15px; */
   display: flex;
   align-items: center;
+  position: relative;
+}
+
+.searchWraper .searchicon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.searchWraper .searchBtn { 
+  height: 40px;
+  padding-right: 12px;
+}
+.searchWraper .searchBtn:hover {
+  opacity: 0.55;
 }
 .searchicon {
   margin-right: 14px;
+  position: relative;
 }
 input.searchInputr {
   border: none;
@@ -354,11 +370,30 @@ input.searchInputr {
   margin-right: 14px;
   font-size: 14px;
   color: #7A8699;
+
+  padding: 8px 15px 8px 35px;
+  height: 40px;
+}
+
+.searchBarWraper .searchicon .searchIconImg {
+  position: absolute;
+  top: 11px;
+  left: 10px;
+}
+
+.searchBarWraper .searchicon .searchInputr {
+  width: 170px;
+  margin-right: 0;
+  padding-right: 10px;
 }
 
 .audioInput {
   margin-left: 37px;
   cursor: pointer;
+}
+
+.audioInput:hover {
+  opacity: 0.50;
 }
 
 .navbarMenu {
@@ -449,25 +484,25 @@ img.pogressInfo {
 }
 .rightSecHeader {
   height: 87px;
-  padding: 32px;
   border-bottom: 1px solid #d3dae3;
   background: #F7F8FA;
 }
 .closeRightSec {
   cursor: pointer;
+  padding: 32px;
+  display: block;
 }
-.rightSecWraper {
+/* .rightSecWraper {
   position: relative;
   height: 100%;
   width: 100%;
-}
+} */
 .rightSecFooter {
   position: absolute;
   width: 88px;
   bottom: 0;
   left: 0;
   height: 88px;
-  padding: 36px;
   border-top: 1px solid #d3dae3;
   background-color: #F7F8FA;
 }
@@ -476,6 +511,7 @@ img.pogressInfo {
   background:none;
   outline: none;
   cursor: pointer;
+  padding: 36px;
 }
 .rightSecMidSection {
   height: calc(100vh - 88px);
@@ -628,30 +664,30 @@ color: #3B82F6;
   width: 20px;
 }
  
-.firstUser {
+.assignedUsersWraper span:first-child {
   position: absolute;
   top: 0;
   left: 28px;
 }
-.secUser {
+.assignedUsersWraper span:nth-child(2) {
   position: absolute;
   top: 0;
   left: 50px;
 }
-.thirdUser {
+.assignedUsersWraper span:nth-child(3) {
   position: absolute;
   top: 0;
   left: 78px;
 }
-.fourthUser {
+.assignedUsersWraper span:nth-child(4) {
   position: absolute;
   top: 0;
   left: 108px;
 }
-.moreUsers {
+.assignedUsersWraper span:nth-child(5) {
   position: absolute;
   top: 0;
-  left: 134px;
+  left: 108Px;
 }
 
 .moreUsersCount {
@@ -665,12 +701,21 @@ color: #3B82F6;
   font-size: 12px;
 }
 
+.moreUsersCount:hover {
+  color: #F2F4F7;
+  background: #606C80;
+}
+
 .addUserBtn {
   margin-left: auto;
   padding: 7px 8px;
   background: #FFFFFF;
   border: 2px dashed #EBEEF2;
   border-radius: 48px;
+}
+
+.addUserBtn:hover {
+  border: 2px dashed #acb4bf;
 }
 
 .addUserBtn button {
@@ -784,10 +829,8 @@ color: #3B82F6;
   border: 1px solid #EBEEF2;
   box-shadow: 0px 1px 3px rgb(96 108 128 / 5%);
   border-radius: 8px;
-  height: 40px;
   display: flex;
   align-items: center;
-  padding: 8px 15px;
   margin-right: 49px;
 }
 .searchBarWraper .searchicon img {
@@ -795,13 +838,15 @@ color: #3B82F6;
   margin-right: 12px;
 }
 
+.searchBarWraper .searchicon {
+  margin-right: 0;
+}
+
 .searchInputr {
- font-weight: 12px;
+ font-size: 12px;
  font-weight: 700;
 }
-.searchBarWraper .searchicon .searchInputr {
-  width: 105px;
-}
+
 
 .actionBtnWrapers {
   margin-left: auto;
@@ -830,27 +875,37 @@ align-items: center;
   margin-right: 0;
 }
 
+.actionBtnWrapers ul li:hover {
+  background: #f3f5f9;
+}
+
 .boxWrapers {
   grid-column-gap: 24px;
     -webkit-column-gap: 24px;
     column-gap: 24px;
     display: flex;
-    align-items: center;
     justify-content: center;
     position: relative;
 }
 
 .individualBox {
   flex: 1 1 25%; 
-  height: 90vh;
 }
 .boxHeadingWraper {
   display: flex;
   align-items: center;
   margin-bottom: 34px;
 }
-span.actionBox {
+.actionBox {
   margin-left: auto;
+}
+
+.actionBox a {
+  padding:10px 0;
+}
+
+.actionBox a:hover {
+  opacity: 0.85;;
 }
 
 .boxHeadingWraper h4 {
@@ -860,8 +915,6 @@ span.actionBox {
 }
 .boxNumbers {
   margin-left: 12px;
-  width: 24px;
-  height: 24px;
   padding: 4px 8px;
   font-size: 10px;
   font-weight: 800;
@@ -888,7 +941,6 @@ border-radius: 8px;
 padding: 20px;
 width: 100%;
 margin-bottom: 16px;
-min-height: 92px;
 }
 .boxInfoHeading {
   width: 65%;
@@ -957,14 +1009,20 @@ font-weight: 600;
   display: flex;
   align-items: center;
 }
-.boxUserWraper .firstUser {
+.boxUserWraper span:first-child {
   left: 0;
+  position: absolute;
+  top: 0;
 }
-.boxUserWraper .secUser {
+.boxUserWraper  span:nth-child(2) {
   left: 28px;
+  position: absolute;
+  top: 0;
 }
-.boxUserWraper .moreUsers {
+.boxUserWraper  span:nth-child(3) {
   left: 50px;
+  position: absolute;
+  top: 0;
 }
 .boxUserWraper {
   margin-right: 30px;
@@ -1007,19 +1065,62 @@ font-weight: 600;
 .noUsers .tagsWraper {
   margin-bottom: 0;
 }
-.indBoxContent.addNew {
-  min-height: 32px;
-  text-align: center;
-  padding: 8px;
-}
+
 
 .indBoxContent.addNew {
   min-height: 32px;
     text-align: center;
-    padding: 9px;
+    padding: 0px;
 }
 
 .indBoxContent.addNew button {
   border: none;
   background: none;
+  padding: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.indBoxContent.addNew button:hover {
+  background: rgb(248 251 255 / 85%);
+}
+
+
+
+
+
+.arc {
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 47px;
+  height: 47px;
+  border-radius: 100%;
+  border: 2px solid;
+}
+
+.arc_start {
+  border-color: transparent #2563EB #2563EB #2563EB;
+  -webkit-transform: rotate(1deg);
+  -moz-transform: rotate(1deg);
+  -ms-transform: rotate(1deg);
+  -o-transform: rotate(1deg);
+  transform: rotate(1deg);
+}
+
+.arc_end {
+  border-color: #2563EB #2563EB #2563EB transparent;
+  -webkit-transform: rotate(42deg);
+  -moz-transform: rotate(42deg);
+  -ms-transform: rotate(42deg);
+  -o-transform: rotate(42deg);
+  transform: rotate(42deg);
+}
+
+
+.headerUserInfoWraper .arc {
+  top: -3px;
+  left: 0px;
+  width: 38px;
+  height: 38px;
 }
