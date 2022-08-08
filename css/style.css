@@ -366,7 +366,7 @@ font-weight:700;
 input.searchInputr {
   border: none;
   padding: 3px 0;
-  width: 155px;
+  width: 215px;
   margin-right: 14px;
   font-size: 14px;
   color: #7A8699;
@@ -382,7 +382,7 @@ input.searchInputr {
 }
 
 .searchBarWraper .searchicon .searchInputr {
-  width: 170px;
+  width: 176px;
   margin-right: 0;
   padding-right: 10px;
 }
@@ -581,7 +581,7 @@ img.pogressInfo {
 
 .rightSideWraper {
   position: relative;
-  padding: 36px;
+  padding: 38px;
   height: calc(100vh - 87px);
     overflow-y: auto;
 }
@@ -609,7 +609,7 @@ img.pogressInfo {
 }
 
 .subMenuWraper {
-  margin-left: 150px;
+  margin-left: 152px;
 }
 
 .subMenu li {
@@ -729,7 +729,7 @@ color: #3B82F6;
 .boardView {
   border: 1px solid #EBEEF2;
   border-radius: 5px 0 0 5px;
-  padding:11px 19px;
+  padding:11px 10px;
   color: #606C80;
   font-weight: 700;
   background: #FAFBFC;
@@ -739,10 +739,13 @@ color: #3B82F6;
   border: 1px solid #EBEEF2;
   border-left: none;
   border-radius: 0 5px 5px 0;
-  padding:11px 19px;
+  padding:11px 10px;
   color: #606C80;
   font-weight: 700;
   cursor: pointer;
+  background: #fff;
+  display: flex;
+  align-items: center;
 }
 
 .listView:hover {
@@ -750,7 +753,7 @@ color: #3B82F6;
 }
 
 .boardView:hover {
-  background: #F7F8FA;
+  background: #fff;
 }
 
 .boardView img, .listView img {
@@ -767,7 +770,7 @@ color: #3B82F6;
 }
 
 .accessBtnWraper {
-  padding-right: 16px;
+  padding-right: 22px;
   border-right: 1px solid #EBEEF2;
   width: auto;
   display: inline-flex;
@@ -797,7 +800,7 @@ color: #3B82F6;
   width: auto;
   display: flex;
   align-items: center;
-  margin-right: 16px;
+  margin-right: 18px;
 }
 .dashboardControlsWraper {
   display: flex;
@@ -808,20 +811,24 @@ color: #3B82F6;
   color: #98A2B3;
   font-size: 11px;
   font-weight: 700;
-  margin-right: 12px;
+  margin-right: 16px;
 }
 
 .socialMediaLink a {
-  FONT-WEIGHT: 700;
+  font-weight: 700;
   color: #606C80;
   font-size: 11px;
   text-decoration: none;
+  line-height: 6px;
 }
-
-.socialMediaLink a img {
-  margin-right: 12px;
+.socialMediaImgWraper {
+  margin-right: 16px;
   width: 28px;
   height: 28px;
+}
+.socialMediaImgWraperimg {
+  width: 100%;
+  height: 100%;
 }
 
 .searchBarWraper {
@@ -848,8 +855,10 @@ color: #3B82F6;
 }
 
 
-.actionBtnWrapers {
+.dasgboardControlsRight {
   margin-left: auto;
+  display: flex;
+  align-items: center;
 }
 
 .actionBtnWrapers ul {
@@ -967,6 +976,7 @@ margin-bottom: 16px;
 color: #1F2633;
 font-size:12px;
 font-weight: 600;
+line-height: 20px;
 }
 .indBoxInfos {
   display: flex;
@@ -1118,9 +1128,10 @@ font-weight: 600;
 }
 
 
-.headerUserInfoWraper .arc {
+.userLists .headerUserInfoWraper .arc {
   top: -3px;
   left: 0px;
   width: 38px;
   height: 38px;
 }
+
