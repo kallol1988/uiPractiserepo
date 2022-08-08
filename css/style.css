@@ -172,8 +172,12 @@ br,
 
 .leftSidebar {
   height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
   padding-bottom: 25px;
   border-right: 1px solid #d3dae3;
+      flex-shrink: 0;
 }
 
 .sidebarHeader {
@@ -182,6 +186,7 @@ br,
   display: flex;
   align-items: center;
   height: 87px;
+  flex-shrink: 0;
 }
 
 .sidebarHeader h3 {
@@ -197,7 +202,7 @@ br,
 
 .sidebarContentWraper {
   padding: 32px;
-  height: calc(100vh - 87px);
+  /* height: calc(100vh - 87px); */
   overflow-y: auto;
 }
 .userInfo {
@@ -304,23 +309,15 @@ font-weight:700;
   background-color: #2563EB;
 }
 
-
-
-
-
-
-
-
-
-
-
 .contentRight {
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: calc(100% - 293px);
   max-width: calc(100% - 293px);
-  height: 100%;
+  height: 100vh;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 .rightSideHeader {
     height: 87px;
@@ -329,6 +326,7 @@ font-weight:700;
     padding: 20px 36px;
     display: flex;
     align-items: center;
+    flex-shrink: 0;
 }
 .searchBtn {
   border: none;
@@ -481,11 +479,14 @@ img.pogressInfo {
   top: 0;
   text-align: center;
   border-left: 1px solid #d3dae3;
+  display: flex;
+  flex-direction: column;
 }
 .rightSecHeader {
   height: 87px;
   border-bottom: 1px solid #d3dae3;
   background: #F7F8FA;
+  flex-shrink: 0;
 }
 .closeRightSec {
   cursor: pointer;
@@ -505,6 +506,7 @@ img.pogressInfo {
   height: 88px;
   border-top: 1px solid #d3dae3;
   background-color: #F7F8FA;
+  flex-shrink: 0;
 }
 .rightFooterBtn {
   border: none;
@@ -514,7 +516,7 @@ img.pogressInfo {
   padding: 36px;
 }
 .rightSecMidSection {
-  height: calc(100vh - 88px);
+  /* height: calc(100vh - 88px); */
   padding-bottom: 125px;
   padding-top: 105px;
   overflow-y: auto;
@@ -582,7 +584,7 @@ img.pogressInfo {
 .rightSideWraper {
   position: relative;
   padding: 38px;
-  height: calc(100vh - 87px);
+  /* height: calc(100vh - 87px); */
     overflow-y: auto;
 }
 .subHeadingsWraper {
@@ -1089,6 +1091,7 @@ line-height: 20px;
   padding: 8px;
   width: 100%;
   text-align: center;
+  line-height: 10px;
 }
 
 .indBoxContent.addNew button:hover {
@@ -1134,4 +1137,7 @@ line-height: 20px;
   width: 38px;
   height: 38px;
 }
-
+.sidelistings li:hover h6 {
+  color: #1d4fab;
+  font-weight: 600;
+}
