@@ -209,6 +209,7 @@ br,
   align-items: center;
   border-bottom: 1px solid #d3dae3;
   padding-bottom: 32px;
+  cursor: pointer;
 }
 .userinfoImg {
   margin-right: 22px;
@@ -242,6 +243,9 @@ br,
 .sidebarMenuListings {
   padding: 32px 0;
 }
+.sidebarMenuListings.projectListings {
+  padding: 6px 0;
+}
 .sidebarHeading {
   display: flex;
   align-items: center;
@@ -256,7 +260,7 @@ font-size:12px;
 font-weight:700;
 }
 .sidebarlistingWraper {
-  padding: 32px 0;
+  padding: 32px 0 35px 0;
   border-bottom: 1px solid #d3dae3;
 }
 
@@ -364,8 +368,7 @@ font-weight:700;
 input.searchInputr {
   border: none;
   padding: 3px 0;
-  width: 215px;
-  margin-right: 14px;
+  width: 229px;
   font-size: 14px;
   color: #7A8699;
 
@@ -377,6 +380,7 @@ input.searchInputr {
   position: absolute;
   top: 11px;
   left: 10px;
+  pointer-events: none;
 }
 
 .searchBarWraper .searchicon .searchInputr {
@@ -432,6 +436,7 @@ input.searchInputr {
 }
 .headerUserInfoWraper {
   position: relative;
+  cursor: pointer;
 }
 img.pogressInfo {
   position: absolute;
@@ -517,8 +522,8 @@ img.pogressInfo {
 }
 .rightSecMidSection {
   /* height: calc(100vh - 88px); */
-  padding-bottom: 125px;
-  padding-top: 105px;
+  padding-bottom: 100px;
+  padding-top: 100px;
   overflow-y: auto;
 }
 
@@ -597,6 +602,7 @@ img.pogressInfo {
 .editableHeading {
   display: flex;
   align-items: center;
+  margin-right: auto;
 }
 
 .editableHeading h3 {
@@ -610,9 +616,9 @@ img.pogressInfo {
   cursor: pointer;
 }
 
-.subMenuWraper {
+/* .subMenuWraper {
   margin-left: 152px;
-}
+} */
 
 .subMenu li {
   display: inline-block;
@@ -710,20 +716,21 @@ color: #3B82F6;
 
 .addUserBtn {
   margin-left: auto;
-  padding: 7px 8px;
   background: #FFFFFF;
-  border: 2px dashed #EBEEF2;
   border-radius: 48px;
 }
 
-.addUserBtn:hover {
+.addUserBtn button:hover {
   border: 2px dashed #acb4bf;
 }
 
 .addUserBtn button {
-  height: 20px;
-  border: none;
+  padding: 7px 8px;
   background: none;
+  height: 38px;
+  border: 2px dashed #EBEEF2;
+  border-radius: 48px;
+  width: 40px;
 }
 .addUserBtn button img {
   vertical-align: middle;
@@ -957,7 +964,7 @@ margin-bottom: 16px;
   width: 65%;
 }
 .boxInfodetails {
-  width: 15%;
+  width: 11.2%;
   display: flex;
   align-items: center;
   text-align: right;
@@ -1000,6 +1007,9 @@ line-height: 20px;
   display: inline-block;
   cursor: pointer;
 }
+.tagsUl li:hover {
+  opacity: 0.75;
+}
 
 .tagsUl li:last-child {
   margin-right: 0;
@@ -1017,7 +1027,7 @@ line-height: 20px;
 }
 .boxUserWraper {
   position: relative;
-  width:52%;
+  width:47%;
   display: flex;
   align-items: center;
 }
@@ -1112,7 +1122,7 @@ line-height: 20px;
   border: 2px solid;
 }
 
-.arc_start {
+.arcStart {
   border-color: transparent #2563EB #2563EB #2563EB;
   -webkit-transform: rotate(1deg);
   -moz-transform: rotate(1deg);
@@ -1121,7 +1131,7 @@ line-height: 20px;
   transform: rotate(1deg);
 }
 
-.arc_end {
+.arcEnd {
   border-color: #2563EB #2563EB #2563EB transparent;
   -webkit-transform: rotate(42deg);
   -moz-transform: rotate(42deg);
